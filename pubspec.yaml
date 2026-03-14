@@ -1,0 +1,53 @@
+name: glagol_vpn
+description: A professional VPN app supporting WireGuard and OpenVPN
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # VPN protocols - using alternative packages for compatibility
+  # wireguard_flutter: ^1.0.0         # WireGuard support
+  # flutter_openvpn: ^0.1.0           # OpenVPN support
+
+  # UI & UX
+  flutter_animate: ^4.3.0           # Smooth animations
+  google_fonts: ^6.1.0              # Typography
+  animated_text_kit: ^4.2.2         # Animated text
+
+  # State management
+  flutter_riverpod: ^2.4.0          # State management
+  riverpod_annotation: ^2.3.0
+
+  # Storage & preferences
+  shared_preferences: ^2.2.2        # Save settings
+  flutter_secure_storage: ^9.0.0    # Secure credentials storage
+
+  # Networking & utilities
+  dio: ^5.4.0                       # HTTP client
+  http: ^1.2.0                      # HTTP requests
+  connectivity_plus: ^5.0.2         # Network status
+  device_info_plus: ^9.1.1          # Device info
+  url_launcher: ^6.1.14             # Launch external apps
+
+  # Permissions
+  permission_handler: ^11.1.0
+
+  # Icons
+  flutter_svg: ^2.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
